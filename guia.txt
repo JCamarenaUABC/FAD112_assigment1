@@ -1,0 +1,29 @@
+python3 -m venv venv
+source venv/bin/activate
+
+pip3 install django
+django-admin startproject config
+
+
+
+
+mkdir firstAppdjango
+cd firstAppdjango
+python3 -m venv venv
+source venv/bin/activate
+pip3 install django
+django-admin startproject config .
+
+python3 manage.py runserver                 | EJECUTA EL SERVER
+python3 manage.py migrate                   |QUITA MENSAJE DE ERROR
+python3 manage.py startapp pages            |CREA LOS MODULOS
+
+tree pages
+
+
+
+
+
+python3 manage.py makemigrations posts
+python3 manage.py migrate
+
